@@ -1,0 +1,1 @@
+export const apiKey = (dev: string, key: string) => process.env.NODE_ENV === dev && key === process.env.PACK_API
