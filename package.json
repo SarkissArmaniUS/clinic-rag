@@ -4,11 +4,22 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "ingest": "tsx --env-file=.env.local scripts/ingest.ts",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
+    "@ai-sdk/langchain": "^3.0.179",
+    "@ai-sdk/react": "^4.0.183",
+    "@langchain/core": "^1.5.0",
+    "@langchain/google-genai": "^2.3.7",
+    "@langchain/langgraph": "^1.7.5",
+    "@langchain/textsplitters": "^1.0.2",
+    "@supabase/supabase-js": "^2.119.2",
+    "@upstash/ratelimit": "^2.2.1",
+    "@upstash/redis": "^1.41.0",
+    "ai": "^7.0.179",
     "next": "16.4.6",
     "react": "19.3.0",
     "react-dom": "19.3.0"
@@ -21,6 +32,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.4.6",
     "tailwindcss": "4.3.3",
+    "tsx": "^4.23.15",
     "typescript": "^5"
   }
 }
