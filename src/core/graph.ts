@@ -79,7 +79,6 @@ export function buildGraph(pack: DomainPack) {
     return { messages: [response] };
   };
 
-  // Маршрут выбирается без LLM: надёжно и бесплатно
   const route = (state: State) =>
     pack.emergencyKeywords.some((k) => lastText(state).includes(k)) ? "emergency" : "retrieve";
 

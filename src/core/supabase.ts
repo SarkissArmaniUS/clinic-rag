@@ -1,6 +1,5 @@
 import { createClient } from "@supabase/supabase-js";
 
-// Серверний ключ. Никогда не добавляй NEXT_PUBLIC_ к этим переменным
 export function getSupabase() {
   const url = process.env.SUPABASE_URL;
   const key = process.env.SUPABASE_SERVICE_ROLE_KEY;

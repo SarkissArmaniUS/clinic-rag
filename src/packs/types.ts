@@ -5,7 +5,7 @@ export interface DomainPack {
   systemPrompt: string;
   disclaimer: string;
   suggestions: string[];
-  // Экстренные случаи: проверка идёт по ключевым словам, без участия LLM
+
   emergencyPrompt: string;
   emergencyKeywords: string[];
 }

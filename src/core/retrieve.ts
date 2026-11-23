@@ -3,7 +3,6 @@ import { getSupabase } from "./supabase";
 
 export type Chunk = { source: string; content: string; similarity: number };
 
-// Ключ берётся из GOOGLE_API_KEY, размерность по умолчанию 3072 (как в sql/setup.sql)
 export function createEmbeddings() {
   return new GoogleGenerativeAIEmbeddings({ model: "gemini-embedding-001" });
 }

@@ -5,7 +5,6 @@ const enabled = Boolean(
   process.env.UPSTASH_REDIS_REST_URL && process.env.UPSTASH_REDIS_REST_TOKEN
 );
 
-// Без переменных Upstash лимит отключён (удобно для локальной разработки)
 const limiter = enabled
   ? new Ratelimit({
       redis: Redis.fromEnv(),

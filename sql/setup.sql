@@ -1,4 +1,3 @@
--- Выполнить один раз в Supabase: SQL Editor -> New query -> Run
 create extension if not exists vector;
 
 create table if not exists documents (
@@ -8,7 +7,6 @@ create table if not exists documents (
   embedding vector(3072) not null
 );
 
--- Индекс не нужен: фрагментов мало, точный поиск работает мгновенно
 create or replace function match_documents(
   query_embedding vector(3072),
   match_count int default 4,
@@ -28,5 +26,4 @@ as $$
   limit match_count;
 $$;
 
--- Доступ только через серверный ключ
 alter table documents enable row level security;
