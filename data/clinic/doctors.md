@@ -1,11 +1,11 @@
-# Лікарі клініки (демо-дані, вигадані)
+# Clinic Doctors (Demo Data, Fictional)
 
-Іваненко Олена Петрівна, головний лікар, терапевт-стоматолог. Лікує карієс і ускладнення, проводить консультації. Приймає у вівторок, четвер і п'ятницю.
+Olena Petrivna Ivanenko, Chief Physician, General Dentist. Treats tooth decay and its complications and provides consultations. Available on Tuesdays, Thursdays, and Fridays.
 
-Коваленко Андрій Миколайович, хірург-імплантолог. Проводить імплантацію та видалення зубів. Приймає у понеділок, середу і суботу.
+Andrii Mykolaiovych Kovalenko, Oral Surgeon and Implantologist. Performs dental implant procedures and tooth extractions. Available on Mondays, Wednesdays, and Saturdays.
 
-Мельник Ірина Сергіївна, дитячий стоматолог. Приймає дітей від 3 років. Працює з понеділка по п'ятницю з 10:00 до 15:00.
+Iryna Serhiivna Melnyk, Pediatric Dentist. Treats children aged 3 and older. Works Monday through Friday from 10:00 to 15:00.
 
-Шевченко Богдан Олегович, ортопед. Займається протезуванням: коронки, мости, знімні протези. Приймає у вівторок і четвер.
+Bohdan Olehhovych Shevchenko, Prosthodontist. Specializes in dental prosthetics: crowns, bridges, and removable dentures. Available on Tuesdays and Thursdays.
 
-Гігієніст Савченко Марія проводить професійну гігієну щодня за записом.
+Dental Hygienist Mariia Savchenko provides professional dental cleaning every day by appointment.

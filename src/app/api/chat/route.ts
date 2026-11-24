@@ -19,7 +19,7 @@ export async function POST(req: Request) {
   try {
     const ip = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "anonymous";
     if (!(await checkRateLimit(ip))) {
-      return fail("Слишком много запросов. Подождите минуту.", 429);
+      return fail("Too many requests. Please wait a minute.", 429);
     }
 
     const { messages }: { messages: UIMessage[] } = await req.json();
@@ -28,9 +28,9 @@ export async function POST(req: Request) {
       .flatMap((p) => (p.type === "text" ? [p.text] : []))
       .join("");
 
-    if (!text.trim()) return fail("Пустое сообщение.", 400);
+    if (!text.trim()) return fail("Empty message.", 400);
     if (text.length > MAX_CHARS) {
-      return fail(`Сообщение слишком длинное (максимум ${MAX_CHARS} символов).`, 400);
+      return fail(`Message is too long (maximum ${MAX_CHARS} characters).`, 400);
     }
 
     const langchainMessages = await toBaseMessages(messages.slice(-MAX_HISTORY));
@@ -45,8 +45,8 @@ export async function POST(req: Request) {
     console.error("chat error", err);
     const status = (err as { status?: number })?.status;
     if (status === 429) {
-      return fail("Лимит бесплатной модели на сегодня исчерпан. Попробуйте позже.", 429);
+      return fail("Today's free model usage limit has been reached. Please try again later.", 429);
     }
-    return fail("Не удалось получить ответ. Попробуйте позже.", 500);
+    return fail("Failed to get a response. Please try again later.", 500);
   }
 }

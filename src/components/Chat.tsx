@@ -15,7 +15,7 @@ function errorText(message: string) {
     const parsed = JSON.parse(message);
     if (parsed?.error) return String(parsed.error);
   } catch {}
-  return "Не удалось получить ответ. Попробуйте позже.";
+  return "Failed to get a response. Please try again later.";
 }
 
 export default function Chat({ ui }: { ui: ChatUI }) {
@@ -45,7 +45,7 @@ export default function Chat({ ui }: { ui: ChatUI }) {
       <div className="flex-1 space-y-4 overflow-y-auto py-6">
         {messages.length === 0 && (
           <div className="space-y-2">
-            <p className="text-sm text-slate-500">Задайте вопрос или выберите пример:</p>
+            <p className="text-sm text-slate-500">Ask a question or choose an example:</p>
             <div className="flex flex-wrap gap-2">
               {ui.suggestions.map((s) => (
                 <button
@@ -79,7 +79,7 @@ export default function Chat({ ui }: { ui: ChatUI }) {
           </div>
         ))}
 
-        {status === "submitted" && <p className="text-sm text-slate-400">Думаю…</p>}
+        {status === "submitted" && <p className="text-sm text-slate-400">Thinking…</p>}
         {error && (
           <p role="alert" className="text-sm text-red-700">
             {errorText(error.message)}
@@ -100,8 +100,8 @@ export default function Chat({ ui }: { ui: ChatUI }) {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             maxLength={1000}
-            placeholder="Ваш вопрос"
-            aria-label="Ваш вопрос"
+            placeholder="Your question"
+            aria-label="Your question"
             className="flex-1 rounded-lg border border-slate-300 px-3 py-2 text-slate-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-teal-700"
           />
           <button
@@ -109,7 +109,7 @@ export default function Chat({ ui }: { ui: ChatUI }) {
             disabled={busy || !input.trim()}
             className="rounded-lg bg-teal-700 px-4 py-2 text-white disabled:opacity-40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-700"
           >
-            Отправить
+            Send
           </button>
         </div>
         <p className="mt-2 text-xs text-slate-400">{ui.disclaimer}</p>

@@ -22,7 +22,6 @@ function lastText(state: State): string {
   return textOf(state.messages.at(-1)?.content).toLowerCase().replace(/ё/g, "е");
 }
 
-// Последние сообщения пользователя: помогает с уточняющими вопросами вроде «а сколько стоит?»
 function recentUserText(state: State, n = 2): string {
   return state.messages
     .filter((m) => m instanceof HumanMessage)
@@ -46,11 +45,10 @@ export function buildGraph(pack: DomainPack) {
     try {
       const chunks = await searchDocs(recentUserText(state));
       const context = chunks
-        .map((c) => `[Источник: ${c.source}]\n${c.content}`)
+        .map((c) => `[Source: ${c.source}]\n${c.content}`)
         .join("\n\n");
       return { context };
     } catch (err) {
-      // Если база недоступна, бот продолжает работать, но без документов
       console.error("retrieve error", err);
       return { context: "" };
     }
@@ -59,17 +57,17 @@ export function buildGraph(pack: DomainPack) {
   const answer = async (state: State) => {
     const rag = state.context
       ? [
-          "Ниже выдержки из документов клиники.",
-          "Вопросы об услугах, ценах, врачах, графике и подготовке к процедурам отвечай ТОЛЬКО на их основе.",
-          "Если в выдержках нет ответа, скажи, что не знаешь, и отправь к администратору.",
-          "Если использовал документы, в конце ответа укажи: Источник: имя_файла.",
+          "Below are excerpts from the clinic documents.",
+          "Answer questions about services, prices, doctors, schedules, and procedure preparation ONLY based on these excerpts.",
+          "If the excerpts do not contain the answer, say that you do not know and refer the user to the administrator.",
+          "If you used the documents, include the following at the end of your answer: Source: filename.",
           "",
           state.context,
         ].join("\n")
       : [
-          "Документов по этому вопросу не найдено.",
-          "Если вопрос про услуги, цены, врачей, график или подготовку, скажи, что у тебя нет такой информации, и отправь к администратору.",
-          "Ничего не выдумывай.",
+          "No documents related to this question were found.",
+          "If the question is about services, prices, doctors, schedules, or preparation, say that you do not have this information and refer the user to the administrator.",
+          "Do not make anything up.",
         ].join(" ");
 
     const response = await llm.invoke([

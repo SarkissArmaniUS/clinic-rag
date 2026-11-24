@@ -1,11 +1,11 @@
-# Графік роботи та контакти (демо-дані, вигадані)
+# Opening Hours and Contact Information (Demo Data, Fictional)
 
-Клініка працює з понеділка по п'ятницю з 9:00 до 19:00, у суботу з 10:00 до 16:00. Неділя вихідний.
+The clinic is open Monday through Friday from 9:00 to 19:00 and on Saturdays from 10:00 to 16:00. Closed on Sundays.
 
-Адреса: м. Полтава, вулиця Демонстраційна, 1 (вигадана адреса для демо-проєкту).
+Address: 1 Demonstratsiina Street, New York (fictional address for the demo project).
 
-Телефон адміністратора: +380 00 000 00 00 (демо-номер). Адміністратор допоможе записатися на прийом, дізнатися точний час і вирішити юридичні та фінансові питання.
+Administrator's phone number: +380 00 000 00 00 (demo number). The administrator can help you book an appointment, confirm the exact time, and address legal and financial questions.
 
-Для термінових випадків, коли сильний біль чи травма, телефонуйте адміністратору в робочий час: ми намагаємося знайти найближчий вільний час. У разі загрози життю викликайте швидку допомогу за номером 103 або 112.
+For urgent cases involving severe pain or injury, call the administrator during business hours. We will try to find the earliest available appointment. In life-threatening emergencies, call emergency services at 103 or 112.
 
-Запис онлайн у цьому демо ще недоступний, запис проводить адміністратор.
+Online booking is not yet available in this demo. All appointments are scheduled through the administrator.

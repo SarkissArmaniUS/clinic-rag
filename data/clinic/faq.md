@@ -1,13 +1,13 @@
-# Поширені запитання (демо-дані, вигадані)
+# Frequently Asked Questions (Demo Data, Fictional)
 
-Як проходить перший візит? Лікар оглядає порожнину рота, розпитує про скарги й пропонує план лікування з вартістю. Візит триває близько 30-40 хвилин.
+What happens during the first visit? The doctor examines your oral cavity, asks about your concerns, and suggests a treatment plan with an estimated cost. The appointment takes approximately 30–40 minutes.
 
-Як оплатити лікування? Приймаємо готівку та оплату карткою. Для великих планів лікування, як-от імплантація, можна обговорити поетапну оплату з адміністратором.
+How can I pay for treatment? We accept cash and card payments. For extensive treatment plans, such as dental implants, installment payments can be discussed with the administrator.
 
-Чи є гарантія? На пломби та протези діє гарантія. Термін залежить від виду роботи, його назве лікар або адміністратор.
+Is there a warranty? Fillings and dental prosthetics are covered by a warranty. The warranty period depends on the type of procedure and will be specified by the doctor or administrator.
 
-Як скасувати чи перенести запис? Повідомте адміністратору телефоном якнайраніше, бажано за добу до візиту.
+How can I cancel or reschedule an appointment? Please notify the administrator by phone as early as possible, preferably at least one day before your appointment.
 
-Чи можна прийти з дитиною? Так, дітей від 3 років приймає дитячий стоматолог.
+Can I bring my child? Yes, children aged 3 and older are treated by our pediatric dentist.
 
-Чи боляче лікувати? Лікування проводиться під місцевою анестезією, тому процедури зазвичай безболісні.
+Is dental treatment painful? Treatment is performed under local anesthesia, so procedures are generally painless.

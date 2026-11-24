@@ -1,4 +1,3 @@
-// Запуск: npm run ingest
 import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
@@ -18,12 +17,12 @@ async function main() {
       rows.push({ source: file, content: chunk });
     }
   }
-  console.log(`Файлов: ${files.length}, фрагментов: ${rows.length}`);
+  console.log(`Files: ${files.length}, chunks: ${rows.length}`);
 
   const vectors = await createEmbeddings().embedDocuments(rows.map((r) => r.content));
 
   const supabase = getSupabase();
-  // Пересоздаём содержимое, чтобы скрипт можно было запускать повторно
+
   const { error: delError } = await supabase.from("documents").delete().gte("id", 0);
   if (delError) throw delError;
 
@@ -32,7 +31,7 @@ async function main() {
     .insert(rows.map((r, i) => ({ ...r, embedding: vectors[i] })));
   if (error) throw error;
 
-  console.log("Готово");
+  console.log("Done");
 }
 
 main().catch((e) => {

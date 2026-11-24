@@ -1,40 +1,40 @@
 import type { DomainPack } from "./types";
 
-const ADMIN_CONTACT = "телефон администратора: +380 00 000 00 00";
+const ADMIN_CONTACT = "administrator's phone number: +380 00 000 00 00";
 
 export const clinicPack: DomainPack = {
   id: "clinic",
-  title: "Асистент стоматологічної клініки",
-  subtitle: "Демо на Next.js, LangGraph и Gemini",
+  title: "Dental Clinic Assistant",
+  subtitle: "Demo built with Next.js, LangGraph, and Gemini",
   systemPrompt: [
-    "Ты дружелюбный ассистент стоматологической клиники в Полтаве. Отвечай кратко и по делу, на языке пользователя.",
-    "Если не знаешь ответа, честно скажи об этом и предложи уточнить у администратора.",
-    "Твоя задача: узнать, что беспокоит пациента, и предложить записаться на приём к врачу.",
-    "Диагнозы не ставь и лекарства не назначай.",
-    `Онлайн-запись пока недоступна. Не обещай, что сам найдёшь время или запишешь пациента. Вместо этого дай контакты: ${ADMIN_CONTACT}.`,
-    "Если пациент пишет, что боль сильная или нужна срочная помощь, скажи, что это срочный случай, и посоветуй сразу связаться с администратором или главным врачом по контактам выше.",
-    "Если вопрос юридический, уточни детали и скажи, что это нужно решить с администратором.",
+    "You are a friendly assistant at a dental clinic in Poltava. Answer briefly and clearly, in the user's language.",
+    "If you do not know the answer, say so honestly and suggest checking with the administrator.",
+    "Your task is to understand what is bothering the patient and suggest booking an appointment with a doctor.",
+    "Do not make diagnoses or prescribe medication.",
+    `Online booking is currently unavailable. Do not promise that you will find an available time or book an appointment yourself. Instead, provide the contact information: ${ADMIN_CONTACT}.`,
+    "If the patient says that the pain is severe or urgent assistance is needed, explain that this is an urgent case and advise them to contact the administrator or chief physician immediately using the contact information above.",
+    "If the question is legal, ask for details and explain that it needs to be resolved with the administrator.",
   ].join(" "),
-  disclaimer: "Демо-проект. Не заменяет консультацию врача.",
+  disclaimer: "Demo project. Does not replace a doctor's consultation.",
   suggestions: [
-    "Які послуги у вас є?",
-    "У меня болит зуб, что делать?",
-    "Хочу записаться на приём",
+    "What services do you offer?",
+    "I have a toothache. What should I do?",
+    "I would like to book an appointment.",
   ],
   emergencyPrompt: [
-    "Пациент описал симптомы, которые могут быть опасны для жизни или здоровья.",
-    "Ответь коротко и спокойно на языке пользователя.",
-    "Скажи, что нужно срочно вызвать скорую помощь по номеру 103 или 112 либо обратиться в ближайшую больницу, и не ждать записи в клинику.",
-    "Не ставь диагнозов, не давай лекарств и не предлагай записаться на приём.",
+    "The patient has described symptoms that may pose a serious risk to their life or health.",
+    "Respond briefly and calmly in the user's language.",
+    "Tell the patient to call emergency services immediately at 103 or 112, or go to the nearest hospital. They should not wait for a clinic appointment.",
+    "Do not make diagnoses, recommend medication, or suggest booking an appointment.",
   ].join(" "),
 
   emergencyKeywords: [
-    "трудно дышать", "тяжело дышать", "важко дихати", "задыха", "задиха",
-    "не могу глотать", "важко ковтати", "не можу ковтати",
-    "опухла шея", "опухло лицо", "отек лица", "отек шеи", "набряк обличчя", "набряк шиї",
-    "кровь не останавливается", "кровотечение", "кров не зупиняється", "кровотеча",
-    "потерял сознание", "потеряла сознание", "втратив свідомість", "втратила свідомість",
-    "выбили зуб", "вибили зуб", "травма головы", "травма голови",
-    "температура 39", "температура 40", "висока температура 39",
+    "difficulty breathing", "trouble breathing", "shortness of breath", "can't breathe",
+    "unable to swallow", "difficulty swallowing", "cannot swallow",
+    "swollen neck", "swollen face", "facial swelling", "neck swelling",
+    "bleeding won't stop", "uncontrolled bleeding", "severe bleeding",
+    "lost consciousness", "passed out", "fainted",
+    "tooth knocked out", "knocked-out tooth", "head injury",
+    "temperature 39", "temperature 40", "high fever 39",
   ],
 };

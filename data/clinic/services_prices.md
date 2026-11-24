@@ -1,14 +1,15 @@
-# Послуги та ціни (демо-дані, вигадані)
+# Services and Prices (Demo Data, Fictional)
 
-Лікування карієсу: від 1200 грн за зуб. Вартість залежить від глибини ураження та матеріалу пломби.
+Cavity treatment: from UAH 1,200 per tooth. The cost depends on the depth of the decay and the filling material used.
 
-Професійна гігієна порожнини рота: 1500 грн. Включає видалення нальоту й каменю та полірування. Триває близько години.
+Professional oral hygiene cleaning: UAH 1,500. Includes plaque and tartar removal and polishing. Takes approximately one hour.
 
-Відбілювання зубів: 4500 грн. Перед відбілюванням потрібна професійна гігієна.
+Teeth whitening: UAH 4,500. Professional dental cleaning is required before whitening.
 
-Імплантація зубів: від 18000 грн за один імплантат. Точна вартість визначається після консультації та діагностики.
+Dental implants: from UAH 18,000 per implant. The exact cost is determined after consultation and diagnostic examination.
 
-Протезування зубів: від 6000 грн за одну коронку. Вартість залежить від матеріалу
-Дитяча стоматологія: огляд дитини коштує 400 грн, лікування молочних зубів від 900 грн. Приймаємо дітей від 3 років.
+Dental prosthetics: from UAH 6,000 per crown. The cost depends on the material.
 
-Первинна консультація лікаря: 300 грн. Якщо пацієнт погоджується на лікування, вартість консультації враховується в рахунок.
+Pediatric dentistry: a child's examination costs UAH 400, and treatment of baby teeth starts at UAH 900. We treat children aged 3 and older.
+
+Initial doctor's consultation: UAH 300. If the patient agrees to proceed with treatment, the consultation fee is deducted from the total bill.

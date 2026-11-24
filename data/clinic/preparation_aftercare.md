@@ -1,15 +1,15 @@
-# Підготовка та рекомендації після процедур (демо, загальна інформація)
+# Preparation and Post-Procedure Recommendations (Demo, General Information)
 
-Перед візитом: почистіть зуби. Якщо ви приймаєте ліки постійно або маєте хронічні захворювання, повідомте про це лікаря на консультації.
+Before your appointment: Brush your teeth. If you take medication regularly or have chronic medical conditions, inform your doctor during the consultation.
 
-Після видалення зуба: перші 24 години не полощіть рот, не їжте гарячого, уникайте фізичних навантажень. Якщо кровотеча сильна й не зупиняється або піднялася температура, зверніться до лікаря негайно.
+After tooth extraction: Do not rinse your mouth during the first 24 hours, avoid hot food, and refrain from physical activity. If heavy bleeding does not stop or you develop a fever, contact your doctor immediately.
 
-Після лікування карієсу з анестезією: не їжте, поки не пройде оніміння, щоб не прикусити щоку чи язик.
+After cavity treatment with anesthesia: Do not eat until the numbness wears off to avoid accidentally biting your cheek or tongue.
 
-Після професійної гігієни: 2 години краще не їсти, а у наступну добу уникати кави, чаю й продуктів, що фарбують.
+After professional dental cleaning: It is best to avoid eating for 2 hours. During the following 24 hours, avoid coffee, tea, and foods that can stain your teeth.
 
-Після відбілювання: 48 годин уникайте кави, червоного вина та інших продуктів, що забарвлюють зуби. Можлива тимчасова чутливість зубів.
+After teeth whitening: Avoid coffee, red wine, and other staining foods and drinks for 48 hours. Temporary tooth sensitivity may occur.
 
-Перед імплантацією потрібна консультація та діагностика, лікар складе план лікування.
+A consultation and diagnostic examination are required before dental implant surgery. The doctor will prepare a treatment plan.
 
-Ці рекомендації загальні й не замінюють вказівок вашого лікаря.
+These recommendations are general and do not replace the instructions provided by your doctor.
