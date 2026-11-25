@@ -100,3 +100,4 @@ grant execute on function seed_demo_slots(int) to service_role;
 grant execute on function book_slot(bigint, text, text) to service_role;
 
 select seed_demo_slots();
+
