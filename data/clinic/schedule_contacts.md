@@ -2,7 +2,7 @@
 
 The clinic is open Monday through Friday from 9:00 to 19:00 and on Saturdays from 10:00 to 16:00. Closed on Sundays.
 
-Address: 1 Demonstratsiina Street, New York (fictional address for the demo project).
+Address: 1 Demonstratsiina Street, Poltava (fictional address for the demo project).
 
 Administrator's phone number: +380 00 000 00 00 (demo number). The administrator can help you book an appointment, confirm the exact time, and address legal and financial questions.
 

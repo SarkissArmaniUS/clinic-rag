@@ -21,9 +21,9 @@ export async function searchDocs(query: string, k = 4): Promise<Chunk[]> {
   const chunks = (data ?? []) as Chunk[];
   if (process.env.NODE_ENV !== "production") {
     console.log(
-      "[rag]",
-      JSON.stringify(query.slice(0, 60)),
-      chunks.map((c) => `${c.source}:${c.similarity.toFixed(2)}`)
+        "[rag]",
+        JSON.stringify(query.slice(0, 60)),
+        chunks.map((c) => `${c.source}:${c.similarity.toFixed(2)}`)
     );
   }
   return chunks;

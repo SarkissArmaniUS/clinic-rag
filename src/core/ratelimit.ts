@@ -1,20 +1,33 @@
 import { Ratelimit } from "@upstash/ratelimit";
 import { Redis } from "@upstash/redis";
 
-const enabled = Boolean(
-  process.env.UPSTASH_REDIS_REST_URL && process.env.UPSTASH_REDIS_REST_TOKEN
-);
+let limiter: Ratelimit | null | undefined;
 
-const limiter = enabled
-  ? new Ratelimit({
-      redis: Redis.fromEnv(),
-      limiter: Ratelimit.slidingWindow(10, "1 m"),
-      prefix: "assistant",
-    })
-  : null;
+function getLimiter(): Ratelimit | null {
+    if (limiter !== undefined) return limiter;
+
+    const url = process.env.UPSTASH_REDIS_REST_URL?.trim();
+    const token = process.env.UPSTASH_REDIS_REST_TOKEN?.trim();
+
+    limiter =
+        url && token
+            ? new Ratelimit({
+                redis: new Redis({ url, token }),
+                limiter: Ratelimit.slidingWindow(10, "1 m"),
+                prefix: "assistant",
+            })
+            : null;
+    return limiter;
+}
 
 export async function checkRateLimit(id: string): Promise<boolean> {
-  if (!limiter) return true;
-  const { success } = await limiter.limit(id);
-  return success;
+    const l = getLimiter();
+    if (!l) return true;
+    try {
+        const { success } = await l.limit(id);
+        return success;
+    } catch (err) {
+        console.error("ratelimit error", err);
+        return true;
+    }
 }
