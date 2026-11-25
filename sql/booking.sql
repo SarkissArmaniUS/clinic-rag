@@ -29,11 +29,11 @@ alter table slots enable row level security;
 alter table appointments enable row level security;
 
 insert into doctors (name, specialty, treats, work_days, start_hour, end_hour) values
-  ('Іваненко Олена Петрівна', 'Терапевт-стоматолог, головний лікар', 'лікування карієсу, пульпіт, біль у зубі, пломбування, консультація', '{2,4,5}', 9, 17),
-  ('Коваленко Андрій Миколайович', 'Хірург-імплантолог', 'імплантація зубів, видалення зубів, хірургічні процедури', '{1,3,6}', 10, 16),
-  ('Мельник Ірина Сергіївна', 'Дитячий стоматолог', 'огляд і лікування дітей від 3 років', '{1,2,3,4,5}', 10, 15),
-  ('Шевченко Богдан Олегович', 'Ортопед', 'протезування, коронки, мости, знімні протези', '{2,4}', 10, 18),
-  ('Савченко Марія', 'Гігієніст', 'професійна гігієна, чистка зубів, відбілювання', '{1,2,3,4,5}', 9, 18)
+    ('Dr. Emily Carter', 'General Dentist, Head Physician', 'cavity treatment, pulpitis, toothache, fillings, consultation', '{2,4,5}', 9, 17),
+    ('Dr. Michael Brooks', 'Oral Surgeon and Implantologist', 'dental implants, tooth extraction, surgical procedures', '{1,3,6}', 10, 16),
+    ('Dr. Sophie Turner', 'Pediatric Dentist', 'check-ups and treatment for children from age 3', '{1,2,3,4,5}', 10, 15),
+    ('Dr. Daniel Reed', 'Prosthodontist', 'dentures, crowns, bridges, prosthetics', '{2,4}', 10, 18),
+    ('Maria Stevens', 'Dental Hygienist', 'professional cleaning, teeth cleaning, whitening', '{1,2,3,4,5}', 9, 18)
 on conflict (name) do nothing;
 
 create or replace function seed_demo_slots(days_ahead int default 14)
