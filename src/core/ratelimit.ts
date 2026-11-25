@@ -14,7 +14,7 @@ function getLimiter(): Ratelimit | null {
             ? new Ratelimit({
                 redis: new Redis({ url, token }),
                 limiter: Ratelimit.slidingWindow(10, "1 m"),
-                prefix: "assistant",
+                prefix: "assistant-en",
             })
             : null;
     return limiter;

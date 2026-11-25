@@ -20,7 +20,7 @@ function textOf(content: unknown): string {
 }
 
 function lastText(state: State): string {
-  return textOf(state.messages.at(-1)?.content).toLowerCase().replace(/ё/g, "е");
+  return textOf(state.messages.at(-1)?.content).toLowerCase().replace(/[’‘]/g, "'");
 }
 
 function recentUserText(state: State, n = 2): string {
@@ -32,7 +32,7 @@ function recentUserText(state: State, n = 2): string {
 }
 
 function todayInKyiv(): string {
-  return new Intl.DateTimeFormat("uk-UA", {
+  return new Intl.DateTimeFormat("en-GB", {
     dateStyle: "full",
     timeStyle: "short",
     timeZone: "Europe/Kyiv",

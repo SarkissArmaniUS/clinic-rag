@@ -40,12 +40,14 @@ export const clinicPack: DomainPack = {
 
   emergencyKeywords: [
     "hard to breathe", "difficult to breathe", "difficulty breathing", "choking", "suffocat",
-    "can't swallow", "cannot swallow",
-    "swollen neck", "swollen face", "swelling of the face", "swelling of the neck",
-    "won't stop bleeding", "bleeding won't stop", "bleeding",
+    "can't breathe", "cant breathe", "cannot breathe",
+    "can't swallow", "cant swallow", "cannot swallow", "difficulty swallowing",
+    "swollen neck", "swollen face", "swelling of the face", "swelling of the neck", "swelling in my face",
+    "won't stop bleeding", "bleeding won't stop", "bleeding wont stop", "bleeding", "uncontrolled bleeding",
     "lost consciousness", "passed out",
-    "knocked out a tooth", "head injury",
-    "temperature 39", "temperature 40", "high temperature 39",
+    "knocked out a tooth", "knocked out", "head injury",
+    "temperature 39", "temperature 40", "high temperature 39", "high fever",
   ],
+
   tools: clinicTools,
 };
