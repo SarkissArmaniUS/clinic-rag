@@ -1,3 +1,5 @@
+import type { StructuredToolInterface } from "@langchain/core/tools";
+
 export interface DomainPack {
   id: string;
   title: string;
@@ -8,4 +10,6 @@ export interface DomainPack {
 
   emergencyPrompt: string;
   emergencyKeywords: string[];
+
+  tools: StructuredToolInterface[];
 }

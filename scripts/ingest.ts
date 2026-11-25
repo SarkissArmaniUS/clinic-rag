@@ -22,13 +22,12 @@ async function main() {
   const vectors = await createEmbeddings().embedDocuments(rows.map((r) => r.content));
 
   const supabase = getSupabase();
-
   const { error: delError } = await supabase.from("documents").delete().gte("id", 0);
   if (delError) throw delError;
 
   const { error } = await supabase
-    .from("documents")
-    .insert(rows.map((r, i) => ({ ...r, embedding: vectors[i] })));
+      .from("documents")
+      .insert(rows.map((r, i) => ({ ...r, embedding: vectors[i] })));
   if (error) throw error;
 
   console.log("Done");
