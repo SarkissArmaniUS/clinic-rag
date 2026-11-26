@@ -1,5 +1,10 @@
 # Dental Clinic AI Assistant
 
+
+Authentication & Access Keys
+
+To prevent unauthorized API usage and protect token limits in production, the parse API is restricted by access keys. This setup ensures that only authorized reviewers, recruiters, and hiring teams can test the live deployment.
+
 **A grounded AI assistant that answers only from the clinic's documents, sends emergencies to 911, and books appointments through tool calling.**
 
 My first end-to-end RAG project, built as a reusable skeleton for domain-specific assistants.
