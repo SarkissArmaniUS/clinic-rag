@@ -1,15 +1,15 @@
 # Dental Clinic AI Assistant
 
-
-Authentication & Access Keys
-
-To prevent unauthorized API usage and protect token limits in production, the parse API is restricted by access keys. This setup ensures that only authorized reviewers, recruiters, and hiring teams can test the live deployment.
-
 **A grounded AI assistant that answers only from the clinic's documents, sends emergencies to 911, and books appointments through tool calling.**
 
-My first end-to-end RAG project, built as a reusable skeleton for domain-specific assistants.
+[Live demo](https://clinic-rag-theta.vercel.app/) · [Architecture](#how-it-works) · [Use it as a skeleton](#use-it-as-a-skeleton)
 
-[Live demo](<live-demo-url>) · [Architecture](#how-it-works) · [Use it as a skeleton](#use-it-as-a-skeleton)
+> [!NOTE]
+> **Authentication and access keys**
+> To prevent unauthorized API usage and protect the model's token limits in production, the chat API is restricted by access keys. This ensures that only authorized reviewers, recruiters and hiring teams can test the live deployment.
+>
+> **How to get access:** email me at <sarkissarm@email.com> and I'll send you a personal key. Enter it once on the demo page; it is stored in a secure `httpOnly` cookie. Each key has its own rate limit and can be revoked individually.
+>
 
 ## Why it's different from a typical chatbot
 
