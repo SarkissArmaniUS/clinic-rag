@@ -7,7 +7,7 @@ export function createEmbeddings() {
   return new GoogleGenerativeAIEmbeddings({ model: "gemini-embedding-001" });
 }
 
-export async function searchDocs(query: string, k = 4): Promise<Chunk[]> {
+export async function searchDocs(query: string, k = 6): Promise<Chunk[]> {
   const minSimilarity = Number(process.env.MIN_SIMILARITY ?? 0.55);
   const vector = await createEmbeddings().embedQuery(query);
 
