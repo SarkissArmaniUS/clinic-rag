@@ -31,11 +31,11 @@ function recentUserText(state: State, n = 2): string {
       .join("\n");
 }
 
-function todayInKyiv(): string {
-  return new Intl.DateTimeFormat("en-GB", {
+function todayInClinic(): string {
+  return new Intl.DateTimeFormat("en-US", {
     dateStyle: "full",
     timeStyle: "short",
-    timeZone: "Europe/Kyiv",
+    timeZone: "America/New_York",
   }).format(new Date());
 }
 
@@ -82,7 +82,7 @@ export function buildGraph(pack: DomainPack) {
         ].join(" ");
 
     const response = await agentLLM.invoke([
-      new SystemMessage(`${pack.systemPrompt}\n\nCurrent time: ${todayInKyiv()}.\n\n${rag}`),
+      new SystemMessage(`${pack.systemPrompt}\n\nCurrent time: ${todayInClinic()}.\n\n${rag}`),
       ...state.messages,
     ]);
     return { messages: [response] };

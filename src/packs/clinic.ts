@@ -8,7 +8,7 @@ export const clinicPack: DomainPack = {
   title: "Dental clinic assistant",
   subtitle: "Demo built with Next.js, LangGraph and Gemini",
   systemPrompt: [
-    "You are a friendly assistant for a dental clinic in Poltava. Answer briefly and to the point, in the user's language.",
+    "You are a friendly assistant for a dental clinic in New York. Answer briefly and to the point, in the user's language.",
     "If you don't know the answer, say so honestly and suggest checking with the administrator.",
     "Do not make diagnoses and do not prescribe medication.",
     "Your task: find out what is bothering the patient and help them book an appointment.",

@@ -46,7 +46,7 @@ begin
   delete from slots where starts_at < now() - interval '1 day' and is_booked = false;
 
   insert into slots (doctor_id, starts_at)
-  select d.id, (day + make_interval(hours => h)) at time zone 'Europe/Kyiv'
+  select d.id, (day + make_interval(hours => h)) at time zone 'America/New_York'
   from doctors d
   cross join generate_series(
     (current_date + 1)::timestamp,

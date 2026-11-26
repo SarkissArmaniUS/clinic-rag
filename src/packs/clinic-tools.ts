@@ -3,7 +3,7 @@ import type { StructuredToolInterface } from "@langchain/core/tools";
 import { z } from "zod";
 import { getSupabase } from "@/core/supabase";
 
-const TZ = "Europe/Kyiv";
+const TZ = "America/New_York";
 
 const whenFormat = new Intl.DateTimeFormat("uk-UA", {
     weekday: "short",
